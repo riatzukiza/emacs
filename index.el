@@ -4,6 +4,7 @@
 (require 'isend)
 
 (load "./sibilant-mode.el")
+
 (global-company-mode)
 
   ;;;Tern starts here.
@@ -16,11 +17,12 @@
 (defmacro config-layers (&rest body)
   `(setq-default dotspacemacs-configuration-layers ,@body))
 
-(setq-default dotspacemacs-configuration-layers '((shell :variables shell-default-shell 'eshell)))
+(setq-default dotspacemacs-configuration-layers
+              '((shell :variables shell-default-shell 'eshell)))
 
 
 
-(set-frame-parameter (selected-frame) 'alpha '(85 . 50))
+;;(set-frame-parameter (selected-frame) 'alpha '(90 . 50))
 
 
 
